@@ -1,4 +1,4 @@
-package games.tron;
+package com.ausinformatics.tron;
 
 import core.Config;
 import core.Director;

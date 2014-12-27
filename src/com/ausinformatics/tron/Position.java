@@ -1,4 +1,4 @@
-package games.tron;
+package com.ausinformatics.tron;
 
 public class Position {
 	public int r, c;

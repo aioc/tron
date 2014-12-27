@@ -1,4 +1,4 @@
-package games.tron;
+package com.ausinformatics.tron;
 
 import java.awt.Color;
 import java.awt.Graphics;

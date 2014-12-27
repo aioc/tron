@@ -1,4 +1,4 @@
-package games.tron;
+package com.ausinformatics.tron;
 
 import java.util.List;
 import java.util.Random;
@@ -11,7 +11,7 @@ import core.server.DisconnectedException;
 public class GameFactory implements GameBuilder {
 
 	private int boardSize = 25;
-	@Override
+
 	public GameInstance createGameInstance(List<PersistentPlayer> players) {
 		int randKey = new Random().nextInt();
 		

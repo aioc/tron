@@ -1,4 +1,4 @@
-package games.tron;
+package com.ausinformatics.tron;
 
 import java.awt.Graphics;
 import java.util.HashMap;
@@ -29,7 +29,6 @@ public class GameRunner implements GameInstance {
 		return !results.containsKey(players.get(playerIndex));
 	}
 	
-	@Override
 	public void begin() {
 		int playerToMove = 0;
 		while (results.size() != players.size() - 1) {
@@ -100,7 +99,6 @@ public class GameRunner implements GameInstance {
 		}
 	}
 
-	@Override
 	public void getVisualisation(Graphics g, int width, int height) {
 		int[] colours = new int[players.size()];
 		
@@ -110,16 +108,13 @@ public class GameRunner implements GameInstance {
 		state.drawIntoGraphicsContext(g, colours);
 	}
 
-	@Override
 	public Map<PersistentPlayer, Integer> getResults() {
 		return results;
 	}
 
-	@Override
 	public void handleWindowResize(int w, int h) {
 	}
 
-	@Override
 	public void windowClosed() {
 	}
 }
